@@ -72,6 +72,6 @@ function generateText() {
 function popup() {
   alert("hail oracle of sleep");
   alert("guardian of the blue void");
-  alert("goddess of guided mediation and ASMR");
+  alert("goddess of guided meditation and ASMR");
   alert("feed upon our worries and help us rest");
 }
