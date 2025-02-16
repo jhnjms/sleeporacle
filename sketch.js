@@ -6,7 +6,7 @@
 let state = 0;
 let questionText = "what troubles you?";
 let n = 4;
-let numSentences = 4;
+let numSentences = 3;
 let markov;
 let source;
 let displayText = [""];
@@ -19,7 +19,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255, 255, 255);
   fill(255);
-  textSize(20);
+  textSize(28);
   textAlign(CENTER);
 
   button2 = createButton("👁");
@@ -62,7 +62,7 @@ function draw() {}
 function drawText() {
   background(0, 51, 255);
   textAlign(CENTER);
-  text(displayText.join(" "), (windowWidth/2)-100, (windowHeight/2)-275, 200, 500);
+  text(displayText.join(" "), (windowWidth/2)-200, (windowHeight/2)-275, 400, 500);
 }
 
 function generateText() {
