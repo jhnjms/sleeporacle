@@ -5,8 +5,6 @@
 /********************************/
 let state = 0;
 let questionText = "what troubles you?";
-let x = 40,
-  y = 40;
 let n = 4;
 let numSentences = 4;
 let markov;
@@ -18,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(300, 600);
+  createCanvas(windowWidth, windowHeight);
   background(255, 255, 255);
   fill(255);
   textSize(18);
@@ -26,7 +24,7 @@ function setup() {
 
   button2 = createButton("👁");
   //button2 = createButton("🙏");
-  button2.position(250, 15);
+  button2.position((windowWidth/8)*7, 15);
   button2.mousePressed(popup);
   button2.style("background-color", "blue");
   button2.style("border-color", "white");
@@ -34,7 +32,7 @@ function setup() {
   button2.style("border-radius", "5px");
 
   let inp = createInput(questionText);
-  inp.position(45, 550);
+  inp.position((windowWidth/2)-100, 550);
   inp.size(200);
   inp.style("background-color", "blue");
   inp.style("border-color", "white");
@@ -42,7 +40,7 @@ function setup() {
   inp.style("border-radius", "5px");
 
   button = createButton("let go");
-  button.position(125, 575);
+  button.position((windowWidth/2)-20, 575);
   button.mousePressed(generateText);
   button.style("background-color", "blue");
   button.style("border-color", "white");
@@ -61,7 +59,7 @@ function draw() {}
 function drawText() {
   background(0, 51, 255);
   textAlign(CENTER);
-  text(displayText.join(" "), x, y, 200, 500);
+  text(displayText.join(" "), (windowWidth/2)-100, (windowHeight/2)-275, 200, 500);
 }
 
 function generateText() {
@@ -71,7 +69,7 @@ function generateText() {
 
 function popup() {
   alert("hail oracle of sleep");
-  alert("guardian of the blue void");
-  alert("goddess of guided meditation and ASMR");
+  alert("guardian the blue void");
+  alert("goddess of guided mediation and ASMR");
   alert("feed upon our worries and help us rest");
 }
