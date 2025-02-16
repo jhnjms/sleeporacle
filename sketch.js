@@ -19,7 +19,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255, 255, 255);
   fill(255);
-  textSize(18);
+  textSize(20);
   textAlign(CENTER);
 
   button2 = createButton("👁");
@@ -30,22 +30,25 @@ function setup() {
   button2.style("border-color", "white");
   button2.style("color", "white");
   button2.style("border-radius", "5px");
+  button2.style("font-size", "28px")
 
   let inp = createInput(questionText);
-  inp.position((windowWidth/2)-100, (windowHeight/8)*7);
-  inp.size(200);
+  inp.position((windowWidth/2)-150, (windowHeight/8)*7-20);
+  inp.size(300);
   inp.style("background-color", "blue");
   inp.style("border-color", "white");
   inp.style("color", "white");
   inp.style("border-radius", "5px");
+  inp.style("font-size", "28px")
 
   button = createButton("let go");
-  button.position((windowWidth/2)-20, (windowHeight/8)*7+30);
+  button.position((windowWidth/2)-40, (windowHeight/8)*7+30);
   button.mousePressed(generateText);
   button.style("background-color", "blue");
   button.style("border-color", "white");
   button.style("color", "white");
   button.style("border-radius", "5px");
+  button.style("font-size", "28px")
 
   // create a markov model w' n=4
   markov = RiTa.markov(n);
