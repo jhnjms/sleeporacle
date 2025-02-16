@@ -19,7 +19,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255, 255, 255);
   fill(255);
-  textSize(28);
+  fontSize("28px");
   textAlign(CENTER);
 
   button2 = createButton("👁");
