@@ -32,7 +32,7 @@ function setup() {
   button2.style("border-radius", "5px");
 
   let inp = createInput(questionText);
-  inp.position((windowWidth/2)-100, 550);
+  inp.position((windowWidth/2)-100, (windowHeight/8)*7);
   inp.size(200);
   inp.style("background-color", "blue");
   inp.style("border-color", "white");
@@ -40,7 +40,7 @@ function setup() {
   inp.style("border-radius", "5px");
 
   button = createButton("let go");
-  button.position((windowWidth/2)-20, 575);
+  button.position((windowWidth/2)-20, (windowHeight/8)*7+30);
   button.mousePressed(generateText);
   button.style("background-color", "blue");
   button.style("border-color", "white");
